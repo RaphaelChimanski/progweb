@@ -1,12 +1,93 @@
+
+/* fundo para todas as páginas */
 body{
 	background-color: #195F69;
 	background-image: linear-gradient(to bottom, #2BA5B5, #386369 70%);
 	width: 100vw;
     height: 100vh;
-		
 }
 
 
+
+.conteudo .cabecalho{
+	background-color: white;
+	margin-left: 10%;
+    margin-right: 10%;
+	height: 25px;
+	
+}
+
+.conteudo .menu{
+	background-color: #7ECBE3;
+	margin: 3px;
+	margin-left: 10%;
+    margin-right: 10%;
+	height: 60px;
+	
+}
+
+.conteudo .chamaCliente{
+	background-color: #7ECBE3;
+	margin: 3px;
+	margin-left: 10%;
+    margin-right: 10%;
+	height: 300px;
+}
+
+.conteudo .produtos{
+	background-color: #7ECBE3;
+	margin: 3px;
+	margin-left: 10%;
+    margin-right: 10%;
+	height: 300px;
+	
+}
+
+.conteudo .video{
+	background-color: #7ECBE3;
+	margin: 3px;
+	margin-left: 10%;
+    margin-right: 10%;
+	height: 60px;
+}
+
+.conteudo .depoimentos{
+	background-color: #7ECBE3;
+	margin: 3px;
+	margin-left: 10%;
+    margin-right: 10%;
+	height: 60px;
+}
+
+.conteudo .contato{
+	background-color: #7ECBE3;
+	margin: 3px;
+	margin-left: 10%;
+    margin-right: 10%;
+	height: 60px;
+}
+
+.conteudo .rodape{
+	background-color: #7ECBE3;
+	margin: 3px;
+	margin-left: 10%;
+    margin-right: 10%;
+	height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tela de Login e cadastro */
 
 .login{
 	background-color: white;
