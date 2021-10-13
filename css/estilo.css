@@ -22,7 +22,8 @@ body{
 	
 }
 
-.login h3{
+.login h3,h7{
+	text-decoration:none;
 	text-align: center;
 	color: #386369
 }
@@ -45,4 +46,9 @@ body{
 	border:0;
 	border-radius: 20px;
 	margin: 20px 0;
+	transition:1s;
+}
+
+.login input[type=submit]:hover{
+		background-color: #49DEF2;
 }
