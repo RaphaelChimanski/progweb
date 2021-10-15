@@ -1,6 +1,12 @@
+/* importar uma fonte */
+@font-face {
+   font-family: Raleway;
+   src: url("../fonte/Raleway.ttf");
+}
 
-/* fundo para todas as páginas */
+/* fundo  e fonte para todas as páginas */
 body{
+	font-family: Raleway;
 	background-color: #195F69;
 	background-image: linear-gradient(to bottom, #2BA5B5, #386369 70%);
 	width: 100vw;
@@ -10,24 +16,25 @@ body{
 
 
 .conteudo .cabecalho{
-	background-color: white;
+	background-color: #006370;
 	margin-left: 10%;
     margin-right: 10%;
-	height: 25px;
-	
+	height: 25px;	
+	text-align: center;
+	color: white;
 }
 
 .conteudo .menu{
-	background-color: #7ECBE3;
+	background-color: #006370;
 	margin: 3px;
 	margin-left: 10%;
     margin-right: 10%;
-	height: 60px;
+	height: 80px;
 	
 }
 
 .conteudo .chamaCliente{
-	background-color: #7ECBE3;
+	background-color: #006370;
 	margin: 3px;
 	margin-left: 10%;
     margin-right: 10%;
@@ -35,7 +42,7 @@ body{
 }
 
 .conteudo .produtos{
-	background-color: #7ECBE3;
+	background-color: #006370;
 	margin: 3px;
 	margin-left: 10%;
     margin-right: 10%;
@@ -44,7 +51,7 @@ body{
 }
 
 .conteudo .video{
-	background-color: #7ECBE3;
+	background-color: #006370;
 	margin: 3px;
 	margin-left: 10%;
     margin-right: 10%;
@@ -52,7 +59,7 @@ body{
 }
 
 .conteudo .depoimentos{
-	background-color: #7ECBE3;
+	background-color: #006370;
 	margin: 3px;
 	margin-left: 10%;
     margin-right: 10%;
@@ -60,7 +67,7 @@ body{
 }
 
 .conteudo .contato{
-	background-color: #7ECBE3;
+	background-color: #006370;
 	margin: 3px;
 	margin-left: 10%;
     margin-right: 10%;
@@ -68,7 +75,7 @@ body{
 }
 
 .conteudo .rodape{
-	background-color: #7ECBE3;
+	background-color: #006370;
 	margin: 3px;
 	margin-left: 10%;
     margin-right: 10%;
@@ -99,7 +106,6 @@ body{
 	top: 50%;
 	transform: translate(-50%, -50%);
 	border-radius: 5px;
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	
 }
 
