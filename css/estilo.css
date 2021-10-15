@@ -30,7 +30,33 @@ body{
 	margin-left: 10%;
     margin-right: 10%;
 	height: 80px;
-	
+		
+}
+.conteudo .menu .menuLogo{
+	float: left;
+	display: table-cell;
+	/*width: 300px;	*/
+}
+
+.conteudo .menu .menuLinks{
+	float: left;
+	line-height:80px;
+	background-color: aliceblue;
+	margin: 0 auto;
+	text-align: center;
+	height: 80px;
+	display: table-cell;
+	/*width: 50%;*/
+}
+.conteudo .menu .menuIcones{
+	float: left;
+	line-height:80px;
+	background-color: darkgreen;
+	margin: 0 auto;
+	text-align: center;
+	height: 80px;
+	display: table-cell;
+	/*width: 26%;*/
 }
 
 .conteudo .chamaCliente{
