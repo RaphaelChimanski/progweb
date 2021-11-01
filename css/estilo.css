@@ -7,110 +7,309 @@
 /* fundo  e fonte para todas as páginas */
 body{
 	font-family: Raleway;
-	background-color: #195F69;
-	background-image: linear-gradient(to bottom, #2BA5B5, #386369 70%);
+	background: url("../imagens/fundo.png");
 	width: 100vw;
     height: 100vh;
+	color: white; text-shadow: black 0.1em 0.1em 0.2em;
+	/**overflow: hidden;**/
 }
 
 
 
-.conteudo .cabecalho{
+.cabecalho{
 	background-color: #006370;
 	margin-left: 10%;
     margin-right: 10%;
 	height: 25px;	
 	text-align: center;
 	color: white;
-}
-
-.conteudo .menu{
-	background-color: #006370;
-	margin: 3px;
-	margin-left: 10%;
-    margin-right: 10%;
-	height: 80px;
-		
-}
-.conteudo .menu .menuLogo{
-	float: left;
-	display: table-cell;
-	/*width: 300px;	*/
-}
-
-.conteudo .menu .menuLinks{
-	float: left;
-	line-height:80px;
-	background-color: aliceblue;
-	margin: 0 auto;
-	text-align: center;
-	height: 80px;
-	display: table-cell;
-	/*width: 50%;*/
-}
-.conteudo .menu .menuIcones{
-	float: left;
-	line-height:80px;
-	background-color: darkgreen;
-	margin: 0 auto;
-	text-align: center;
-	height: 80px;
-	display: table-cell;
-	/*width: 26%;*/
-}
-
-.conteudo .chamaCliente{
-	background-color: #006370;
-	margin: 3px;
-	margin-left: 10%;
-    margin-right: 10%;
-	height: 300px;
-}
-
-.conteudo .produtos{
-	background-color: #006370;
-	margin: 3px;
-	margin-left: 10%;
-    margin-right: 10%;
-	height: 300px;
 	
 }
 
-.conteudo .video{
+.menu{
 	background-color: #006370;
 	margin: 3px;
 	margin-left: 10%;
     margin-right: 10%;
-	height: 60px;
+	height: 80px;
+	align-items: center;
+    display: flex;
+    justify-content: center;
+	color:white;
+
+		
+}
+.menuLogo{
+	float: left;
 }
 
-.conteudo .depoimentos{
+.menuLinks{
+	margin: 0 auto;
+	line-height:80px;
+	text-align: center;
+	height: 80px;
+	align-items:flex-end;
+	width: 300px;
+}
+.menuIcones{
+	float: left;
+	/*line-height:80px;*/
+	/*background-color: darkgreen;*/
+	text-align: center;
+	/*height: 80px;*/
+	align-content: flex-end;
+	margin-right: 10px;
+
+}
+
+.menuIcones input[type=text]{
+	width: 200px;
+	height: 25px;
+	border: 1px solid #CCC;
+	text-align: center;
+	border-radius: 10px;
+}
+
+/* Div de "propaganda com um botão de cadastro" */
+.chamaCliente{
+	margin: 3px;
+	margin-left: 10%;
+    margin-right: 10%;
+	height: 300px;
+	text-align: center;
+}
+
+.imagemFundo{
+
+	background-image: url("../imagens/lootbox.jpg");
+	background-repeat: no-repeat center center fixed; 
+  	background-size: cover;
+	margin-left: 10%;
+    margin-right: 10%;
+	
+}
+
+.chamaCliente input[type=submit]{
+	width: 20%;
+	height: 30px;
+	cursor: pointer;
+	background: #2BA5B5;
+	color: white;
+	border:0;
+	border-radius: 20px;
+	margin: 20px 0;
+	transition:1s;
+}
+.chamaCliente input[type=submit]:hover{
+		background-color: #49DEF2;
+}
+
+
+/* Div com os cards */
+.produtos{
 	background-color: #006370;
 	margin: 3px;
 	margin-left: 10%;
     margin-right: 10%;
-	height: 60px;
+	height: 400px;
 }
 
-.conteudo .contato{
+.Cardposicao{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card{
+	width: 200px;
+	height: 280px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+	margin: 15px;
+	margin-top:5px;
+	margin-bottom: 5px;
+
+}
+
+.card-img img{
+	width: 100%;
+	height: 160px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+	
+}
+
+.card-descricao {
+	width: 100%;
+	text-align: center;
+	color: black;	
+}
+.card-preco {
+	width: 100%;
+	text-align: center;
+	color: black;	
+}
+
+
+
+.card-botao input[type=button]{
+	width: 100%;
+	height: 30px;
+	cursor: pointer;
+	background: #2BA5B5;
+	color: white;
+	border:0;
+	border-radius: 20px;
+	margin: 20px 0;
+	text-align: center;
+	transition:1s;
+}
+
+.card-botao input[type=button]:hover{
+		background-color: #49DEF2;
+}
+
+.produtos input[type=submit]{
+	width: 100%;
+	height: 30px;
+	cursor: pointer;
+	background: #2BA5B5;
+	color: white;
+	border:0;
+	border-radius: 20px;
+	margin: 20px 0;
+	text-align: center;
+	transition:1s;
+}
+
+.produtos input[type=submit]:hover{
+		background-color: #49DEF2;
+}
+
+.noCarrinho input[type=submit]{
+	width: 100%;
+	height: 30px;
+	cursor: pointer;
+	background: #00FA9A;
+	color: white;
+	border:0;
+	border-radius: 20px;
+	margin: 20px 0;
+	text-align: center;
+	transition:1s;
+}
+.produtos input[type=submit]:hover{
+		background-color: #00FA9A;
+}
+
+
+
+
+
+.video{
 	background-color: #006370;
 	margin: 3px;
 	margin-left: 10%;
     margin-right: 10%;
-	height: 60px;
+	height: 350px;
 }
 
-.conteudo .rodape{
+.depoimentos{
 	background-color: #006370;
 	margin: 3px;
 	margin-left: 10%;
     margin-right: 10%;
-	height: 20px;
+	height: 200px;
+}
+
+.contato{
+	background-color: #006370;
+	margin: 3px;
+	margin-left: 10%;
+    margin-right: 10%;
+	height: 280px;
+}
+
+.rodape{
+	background-color: #006370;
+	margin: 3px;
+	padding-top: 20px;
+	margin-left: 10%;
+    margin-right: 10%;
+	height: 70px;
+}
+
+.tituloProdutos{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.depoimentos{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contatos{
+	margin-top:50px;
+	margin-left: 280px;
+	margin-right: 280px;
+	width: 0 auto;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	height: 64px;
+}
+.contatos2{
+	margin-left: 150px;
+	margin-right: 220px;
+	width: 0 auto;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	height: 64px;
+}
+
+.endereco h7{
+	color:white;
 }
 
 
 
 
+.video iframe{
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+
+.depoimentos .mensagensCliente{
+	width: 280px;
+	height: 160px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+	margin: 15px;
+	margin-left: 5px;
+	margin-top:5px;
+	margin-bottom: 5px;
+	border: 1px;
+	background-color: white;
+}
+
+.mensagensCliente h5{
+	width: 200px;
+	color: black;
+	text-align: center;
+	padding-left: 5px;
+}
+.mensagensCliente h7{
+	width: 200px;
+	color: black;
+	text-align: center;
+	padding-left: 20px;
+}
 
 
 
@@ -138,7 +337,7 @@ body{
 .login h3,h7{
 	text-decoration:none;
 	text-align: center;
-	color: #386369
+	color: #000000;
 }
 
 .login 	input[type=text],input[type=password]{
