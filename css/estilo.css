@@ -153,14 +153,14 @@ body{
 
 
 .card-botao input[type=button]{
-	width: 100%;
+	width: calc(100% - 10px);
 	height: 30px;
 	cursor: pointer;
 	background: #2BA5B5;
 	color: white;
 	border:0;
 	border-radius: 20px;
-	margin: 20px 0;
+	margin: 20px 5px;
 	text-align: center;
 	transition:1s;
 }
@@ -187,14 +187,14 @@ body{
 }
 
 .noCarrinho input[type=submit]{
-	width: 100%;
+	width: calc(100% - 10px);
 	height: 30px;
 	cursor: pointer;
 	background: #00FA9A;
 	color: white;
 	border:0;
 	border-radius: 20px;
-	margin: 20px 0;
+	margin: 20px 5px;
 	text-align: center;
 	transition:1s;
 }
