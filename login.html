@@ -4,6 +4,7 @@
 	
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="css/estilo.css">
+		<script src="js/script_Index.js"></script>
 		<title> Home </title>
 	
 	</head>
@@ -13,11 +14,13 @@
 		
 		<div class="login">
 			<h3> Acesso ao site</h3>
-			<input type="text" placeholder="Usuário"/>
-			<input type="password" placeholder="Senha" /><br>
-			<input type="submit" value="Login">
+			<input type="text" id="campoUsuario" placeholder="Usuário"/ >
+			<input type="password" id="campoSenha" placeholder="Senha"  /><br>
+			<input type="submit" value="Login" onClick="login()">
 			<a href="cadastro.html"><input type="submit" value="Cadastro"></a>
 			<a href="index.html"><img src="imagens/home-icon.png" alt="Voltar para Homepage"></a>
+			<div id="erro" class="erro">
+			</div>
 			
 		</div>
 	
