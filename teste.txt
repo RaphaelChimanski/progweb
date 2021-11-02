@@ -26,7 +26,11 @@ outro textoa
 outro texto 
 outro texto 
 outro texto 
+<<<<<<< HEAD
 outro tex 
+=======
+outro xto 
+>>>>>>> branch-login-script
 
 safgaekbgaerg nier gliuebgioebga
 safgaekbgaerg nier gliuebgioebg
