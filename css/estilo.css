@@ -8,10 +8,12 @@
 body{
 	font-family: Raleway;
 	background: url("../imagens/fundo.png");
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
 	width: 100vw;
     height: 100vh;
-	color: white; text-shadow: black 0.1em 0.1em 0.2em;
-	/**overflow: hidden;**/
+	color: white;
+	overflow: hidden;
 }
 
 
@@ -211,16 +213,34 @@ body{
 	margin: 3px;
 	margin-left: 10%;
     margin-right: 10%;
-	height: 350px;
+	height: 380px;
 }
 
 .depoimentos{
-	background-color: #006370;
-	margin: 3px;
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+	text-align: center;
+	/**background-color: #006370;**/
+	margin: 10px;
 	margin-left: 10%;
     margin-right: 10%;
-	height: 200px;
+	height: 175px;
 }
+
+.tituloMensagens{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+	text-align: center;
+	background-color: #006370;
+	margin: 10px;
+	margin-left: 10%;
+    margin-right: 10%;
+	height: 25px;
+}
+
+
 
 .contato{
 	background-color: #006370;
@@ -233,10 +253,9 @@ body{
 .rodape{
 	background-color: #006370;
 	margin: 3px;
-	padding-top: 20px;
 	margin-left: 10%;
     margin-right: 10%;
-	height: 70px;
+	height: 31px;
 }
 
 .tituloProdutos{
@@ -245,13 +264,6 @@ body{
     justify-content: center;
 }
 
-
-
-.depoimentos{
-	display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 .contatos{
 	margin-top:50px;
 	margin-left: 280px;
@@ -299,20 +311,47 @@ body{
 }
 
 .mensagensCliente h5{
-	width: 200px;
+	width: 100%;
 	color: black;
 	text-align: center;
-	padding-left: 5px;
+	
 }
 .mensagensCliente h7{
 	width: 200px;
 	color: black;
 	text-align: center;
-	padding-left: 20px;
+	
 }
 
 
 
+
+/** Tela do carrinho de compras **/
+.carrinho{
+	background-color: white;
+	max-width: 1000px;
+	width: 70%;
+	padding: 20px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 5px;
+	color: black;
+	
+}
+
+.carrinho input[type=submit]{
+	width: 200px;
+	height: 30px;
+	cursor: pointer;
+	background: #2BA5B5;
+	color: white;
+	border:0;
+	border-radius: 20px;
+	margin: 20px 0;
+	transition:1s;
+}
 
 
 
@@ -326,7 +365,7 @@ body{
 	max-width: 500px;
 	width: 70%;
 	padding: 20px;
-	position: absolute;
+	position: fixed;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
@@ -340,7 +379,7 @@ body{
 	color: #000000;
 }
 
-.login 	input[type=text],input[type=password]{
+.login 	input[type=text],input[type=password],input[type=email]{
 	width: 100%;
 	height: 25px;
 	border: 1px solid #CCC;
@@ -364,3 +403,15 @@ body{
 .login input[type=submit]:hover{
 		background-color: #49DEF2;
 }
+
+
+.imgcartao{
+	height: 200px;
+}
+
+.numCartao input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+	}
+

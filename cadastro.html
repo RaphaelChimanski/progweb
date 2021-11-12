@@ -3,6 +3,7 @@
 	<head>
 	
 		<meta charset="utf-8"/>
+		<script src="js/script_index.js"></script>
 		<link rel="stylesheet" href="css/estilo.css">
 		<title> Cadastro </title>
 	
@@ -11,20 +12,19 @@
 	<body>
 	
 		
-		<div class="login">
-			<h3> Tela de Cadastro</h3>
-			<h7><b>Nome*</b></h7>
-			<input type="text" placeholder="Primeiro nome"/>
-			<h7><b>Sobrenome</b></h7>
-			<input type="text" placeholder="Sobrenome"/>
-			<h7><b>E-mail*</b></h7>
-			<input type="text" placeholder="E-mail"/>
-			
-			<br>
-
-			<input type="submit" value="Cadastrar">
-			<a href="index.html"><img src="imagens/home-icon.png" alt="Voltar para Homepage"></a>
-		</div>
+			<div class="login">
+				<h3> Tela de Cadastro</h3>
+				<h7><b>Nome*</b></h7>
+				<input type="text" id="nome" placeholder="Primeiro nome" required/>
+				<h7><b>Senha*</b></h7>
+				<input type="text" id="senha" placeholder="Senha" required/>
+				<h7><b>Sobrenome</b></h7>
+				<input type="text" id="sobrenome" placeholder="Sobrenome" />
+				<h7><b>E-mail*</b></h7>
+				<input type="email" id="email" placeholder="E-mail" />
+				<input type="submit" value="Cadastrar" onClick="cadastroUsuario()">
+				<a href="index.html"><img src="imagens/home-icon.png" alt="Voltar para Homepage"></a>
+			</div>
 	
 	
 	</body>

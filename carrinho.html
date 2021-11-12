@@ -4,6 +4,7 @@
 	
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="css/estilo.css">
+		<script src="js/script_carrinho.js"></script>
 		<title> Home </title>
 	
 	</head>
@@ -11,12 +12,19 @@
 	<body>
 	
 		
-		<div class="login">
+		<div class="carrinho">
 			<h3> Carrinho de compras</h3>
+			<div id="itens"></div>
+			<hr>
+			<table>
+				<tr>
+					<td>Preço total:  </td><td id="precos" width="100px"></td> <td>quantidade de Itens: </td><td id="quantidadeItens" width="100px"></td>
+				</tr>
+			</table>
 			
 			
-			<input type="submit" value="Confirmar compra">
-			<a href="index.html"><img src="imagens/home-icon.png" alt="Voltar para Homepage"></a>
+			<input type="submit" value="Confirmar compra" onClick="pagamento()">
+			<!-- <a href="index.html"><img src="imagens/home-icon.png" alt="Voltar para Homepage"></a>-->
 			
 		</div>
 	

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/estilo.css">
+		<script src="js/script_carrinho.js"></script>
+		<title> Pagamento </title>
+	
+	</head>
+
+	<body>
+	
+		
+		<div class="carrinho">
+			<h3> Cadastro de Cartão</h3>
+			<hr>
+			<table>
+				<tr>
+					<td>Número do Cartão:</td><td><input type="text" placeholder="XXXX-XXXX-XXXX-XXXX" id="numCartao"  autocomplete="off" ></td><td rowspan="4"><img class="imgcartao" src="imagens/cartao.jpg"> </td>
+				</tr>
+				<tr>
+					<td>Nome do titular:</td><td><input type="text" placeholder="Ex.: Raphael C" id="nomeTitular"></td>
+				</tr>
+				<tr>
+					<td>Data de vencimento</td><td><input type="text" id="datavencimento" class="form-control" placeholder="Ex.: mm/aaaa" maxlength="7" autocomplete="off"></td>
+				</tr>
+				<tr>
+					<td>Cód. Segurança</td><td><input type="text" placeholder="XXXX" class="form-control" id="codSeg" maxlength="4"></td>
+				</tr>
+				
+			</table>
+			
+			
+			<input type="submit" value="Cadastrar" onClick="pagamento()">
+			
+			
+		</div>
+	
+	
+	</body>
+	
+	
+</html>
