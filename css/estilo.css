@@ -11,9 +11,9 @@ body{
 	background-repeat: no-repeat;
   	background-attachment: fixed;
 	width: 100vw;
-    height: 100vh;
+    	height: 100vh;
 	color: white;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 
